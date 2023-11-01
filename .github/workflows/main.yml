@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
-<tittle>DEVOPS</tittle>
-<h1>ARCHITECTURE</h1>
-<p>The site is loading from dev</p>
-
-</body>
-</html>
+name: hello-world
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
